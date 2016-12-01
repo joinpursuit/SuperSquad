@@ -24,6 +24,7 @@ class UserDetailViewController: UIViewController {
         
         let segmentedControl = TwicketSegmentedControl(frame: frame)
         segmentedControl.setSegmentItems(titles)
+        segmentedControl.sliderBackgroundColor = UIColor.gray
         
         view.addSubview(segmentedControl)
     }
@@ -48,4 +49,6 @@ extension UserDetailViewController: TwicketSegmentedControlDelegate {
     func didSelect(_ segmentIndex: Int) {
         print("Selected idex: \(segmentIndex)")
     }
+    
+    
 }
