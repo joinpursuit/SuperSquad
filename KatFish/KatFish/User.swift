@@ -39,7 +39,7 @@ class User {
         self.picture = picture
         self.nat = nat
         }
-    
+    //trying to push
     func getUsers(from data: Data) -> [Users]? {
         Alamofire.request(.GET, url).validate().responseJSON { response in
             switch response.result {
