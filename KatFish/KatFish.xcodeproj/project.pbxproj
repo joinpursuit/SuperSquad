@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DAFE4261DF0C300003A46F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAFE4251DF0C300003A46F7 /* User.swift */; };
 		1A1506321DF0B8F8008BD83F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506311DF0B8F8008BD83F /* AppDelegate.swift */; };
 		1A1506341DF0B8F8008BD83F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506331DF0B8F8008BD83F /* ViewController.swift */; };
 		1A1506371DF0B8F8008BD83F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1506351DF0B8F8008BD83F /* Main.storyboard */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0DAFE4251DF0C300003A46F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A15062E1DF0B8F8008BD83F /* KatFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KatFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1506311DF0B8F8008BD83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A1506331DF0B8F8008BD83F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				1A1506381DF0B8F8008BD83F /* Assets.xcassets */,
 				1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */,
 				1A15063D1DF0B8F8008BD83F /* Info.plist */,
-				0DAFE4251DF0C300003A46F7 /* User.swift */,
 			);
 			path = KatFish;
 			sourceTree = "<group>";
@@ -216,7 +213,6 @@
 			files = (
 				1A1506341DF0B8F8008BD83F /* ViewController.swift in Sources */,
 				1A1506321DF0B8F8008BD83F /* AppDelegate.swift in Sources */,
-				0DAFE4261DF0C300003A46F7 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
