@@ -7,6 +7,7 @@
 //
 import Foundation
 import SwiftyJSON
+import Alamofire
 
 class User {
     let gender: String
@@ -37,16 +38,14 @@ class User {
         self.nat = nat
     }
     
-    func getUsers(from data: Data) -> [Users]? {
-        Alamofire.request(.GET, url).validate().responseJSON { response in
-            switch response.result {
-            case .success(let value):
-                let json = JSON(value)
-                print("JSON: \(json)")
-            case .failure(let error):
-                print(error)
+    static func makeUserObjects(from data: Data) -> [User]? {
+       
+            let json = JSON(data: data)
+            
+            for user in json["results"].arrayValue {
+                print(user["firstName"].stringValue)
             }
-        }
+        
         return nil
         
     }
