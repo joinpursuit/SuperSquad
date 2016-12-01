@@ -16,8 +16,8 @@ class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UI
     }
     
     func createLogo() {
-        let logoWidth = 150
-        let logoHeight = 40
+        let logoWidth = 250
+        let logoHeight = 60
         let imageView = UIImageView(frame: CGRect(x: 200, y: 50, width: logoWidth, height: logoHeight))
         imageView.contentMode = .scaleAspectFit
         let image = UIImage(named: "smallLogo.png")

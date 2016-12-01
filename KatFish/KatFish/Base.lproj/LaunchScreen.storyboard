@@ -24,17 +24,17 @@
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish" translatesAutoresizingMaskIntoConstraints="NO" id="JY4-90-BAS">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="191" id="0Wv-D8-PKJ"/>
+                                    <constraint firstAttribute="height" constant="178" id="0Wv-D8-PKJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JY4-90-BAS" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="243" id="8sy-Zk-yXf"/>
-                            <constraint firstItem="JY4-90-BAS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="P4Q-Aw-bxN"/>
+                            <constraint firstItem="JY4-90-BAS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-11" id="P4Q-Aw-bxN"/>
                             <constraint firstItem="JY4-90-BAS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="18" id="Q1N-rL-x80"/>
                             <constraint firstItem="Uxt-FV-cTe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="12" id="SYh-LO-eap"/>
-                            <constraint firstItem="Uxt-FV-cTe" firstAttribute="top" secondItem="JY4-90-BAS" secondAttribute="bottom" constant="-434" id="j5Q-EC-X01"/>
+                            <constraint firstItem="Uxt-FV-cTe" firstAttribute="top" secondItem="JY4-90-BAS" secondAttribute="bottom" constant="-421" id="j5Q-EC-X01"/>
                         </constraints>
                     </view>
                 </viewController>

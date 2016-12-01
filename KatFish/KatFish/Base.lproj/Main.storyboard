@@ -37,7 +37,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="267" height="267"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qI4-9z-YXT"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fish" translatesAutoresizingMaskIntoConstraints="NO" id="qI4-9z-YXT"/>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HzZ-02-Tdk">
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Q1d-Kb-TH8">
                                                                 <frame key="frameInset"/>
@@ -62,7 +62,7 @@
                                                                             </constraints>
                                                                         </view>
                                                                         <vibrancyEffect>
-                                                                            <blurEffect style="light"/>
+                                                                            <blurEffect style="dark"/>
                                                                         </vibrancyEffect>
                                                                     </visualEffectView>
                                                                 </subviews>
@@ -97,24 +97,12 @@
                                             </collectionViewCell>
                                         </cells>
                                     </collectionView>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ASH-QM-dXg">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="121" id="24J-l2-lcy"/>
-                                        </constraints>
-                                        <segments>
-                                            <segment title="Male"/>
-                                            <segment title="Female"/>
-                                        </segments>
-                                        <color key="tintColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    </segmentedControl>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="OVY-aw-09a" firstAttribute="leading" secondItem="itB-tC-Jpr" secondAttribute="leading" constant="8" id="5pa-Vr-wGc"/>
                                     <constraint firstAttribute="bottom" secondItem="OVY-aw-09a" secondAttribute="bottom" constant="120" id="ADE-Vs-5Ea"/>
                                     <constraint firstItem="OVY-aw-09a" firstAttribute="top" secondItem="itB-tC-Jpr" secondAttribute="top" constant="120" id="FYW-UN-lH4"/>
-                                    <constraint firstItem="ASH-QM-dXg" firstAttribute="top" secondItem="OVY-aw-09a" secondAttribute="top" id="hFb-yo-y3B"/>
-                                    <constraint firstItem="ASH-QM-dXg" firstAttribute="centerX" secondItem="itB-tC-Jpr" secondAttribute="centerX" id="oZL-zS-Yd0"/>
                                     <constraint firstAttribute="trailing" secondItem="OVY-aw-09a" secondAttribute="trailing" constant="8" id="yae-WH-h3V"/>
                                 </constraints>
                             </view>
@@ -197,4 +185,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fish" width="321" height="157"/>
+    </resources>
 </document>

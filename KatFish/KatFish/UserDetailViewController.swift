@@ -25,6 +25,7 @@ class UserDetailViewController: UIViewController {
         let segmentedControl = TwicketSegmentedControl(frame: frame)
         segmentedControl.setSegmentItems(titles)
         segmentedControl.sliderBackgroundColor = UIColor.gray
+        segmentedControl.defaultTextColor = UIColor.white
         
         view.addSubview(segmentedControl)
     }
