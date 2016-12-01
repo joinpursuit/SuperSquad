@@ -8,26 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		1A1506321DF0B8F8008BD83F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506311DF0B8F8008BD83F /* AppDelegate.swift */; };
-		1A1506341DF0B8F8008BD83F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506331DF0B8F8008BD83F /* ViewController.swift */; };
+		1A1506341DF0B8F8008BD83F /* KatUserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506331DF0B8F8008BD83F /* KatUserHomeViewController.swift */; };
 		1A1506371DF0B8F8008BD83F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1506351DF0B8F8008BD83F /* Main.storyboard */; };
 		1A1506391DF0B8F8008BD83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1506381DF0B8F8008BD83F /* Assets.xcassets */; };
 		1A15063C1DF0B8F8008BD83F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */; };
 		1A1506441DF0C3DC008BD83F /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506431DF0C3DC008BD83F /* ApiRequestManager.swift */; };
 		3124B50C42F48A265954BEFC /* Pods_KatFish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C921577E992D97E60BAE99 /* Pods_KatFish.framework */; };
+		7D514D871DF0C5C500B18D3F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D514D861DF0C5C500B18D3F /* UserDetailViewController.swift */; };
+		7D514D891DF0C62400B18D3F /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D514D881DF0C62400B18D3F /* UserCollectionViewCell.swift */; };
+		CC9567611DF0CA5400545535 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9567601DF0CA5400545535 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A15062E1DF0B8F8008BD83F /* KatFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KatFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1506311DF0B8F8008BD83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A1506331DF0B8F8008BD83F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A1506331DF0B8F8008BD83F /* KatUserHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatUserHomeViewController.swift; sourceTree = "<group>"; };
 		1A1506361DF0B8F8008BD83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A1506381DF0B8F8008BD83F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A15063B1DF0B8F8008BD83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A15063D1DF0B8F8008BD83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A1506431DF0C3DC008BD83F /* ApiRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestManager.swift; sourceTree = "<group>"; };
+		7D514D861DF0C5C500B18D3F /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		7D514D881DF0C62400B18D3F /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 		A02B54C8075C5E3AEBA88DAF /* Pods-KatFish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatFish.release.xcconfig"; path = "Pods/Target Support Files/Pods-KatFish/Pods-KatFish.release.xcconfig"; sourceTree = "<group>"; };
 		A0C921577E992D97E60BAE99 /* Pods_KatFish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KatFish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C990E5BE773B1226B7F0EA4D /* Pods-KatFish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatFish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KatFish/Pods-KatFish.debug.xcconfig"; sourceTree = "<group>"; };
+		CC9567601DF0CA5400545535 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +71,10 @@
 			children = (
 				1A1506311DF0B8F8008BD83F /* AppDelegate.swift */,
 				1A1506451DF0C3E9008BD83F /* Managers */,
-				1A1506331DF0B8F8008BD83F /* ViewController.swift */,
+				1A1506331DF0B8F8008BD83F /* KatUserHomeViewController.swift */,
 				1A1506351DF0B8F8008BD83F /* Main.storyboard */,
+				1A1506461DF0CE6A008BD83F /* Models */,
+				1A1506471DF0D09E008BD83F /* View Controllers */,
 				1A1506381DF0B8F8008BD83F /* Assets.xcassets */,
 				1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */,
 				1A15063D1DF0B8F8008BD83F /* Info.plist */,
@@ -80,6 +88,23 @@
 				1A1506431DF0C3DC008BD83F /* ApiRequestManager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		1A1506461DF0CE6A008BD83F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC9567601DF0CA5400545535 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1A1506471DF0D09E008BD83F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7D514D881DF0C62400B18D3F /* UserCollectionViewCell.swift */,
+				7D514D861DF0C5C500B18D3F /* UserDetailViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		4BA04BD490449CC988ADA53D /* Frameworks */ = {
@@ -222,9 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1506341DF0B8F8008BD83F /* ViewController.swift in Sources */,
+				CC9567611DF0CA5400545535 /* User.swift in Sources */,
+				1A1506341DF0B8F8008BD83F /* KatUserHomeViewController.swift in Sources */,
+				7D514D891DF0C62400B18D3F /* UserCollectionViewCell.swift in Sources */,
 				1A1506321DF0B8F8008BD83F /* AppDelegate.swift in Sources */,
 				1A1506441DF0C3DC008BD83F /* ApiRequestManager.swift in Sources */,
+				7D514D871DF0C5C500B18D3F /* UserDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KatFish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.jermainekelly.KatFish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KatFish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.jermainekelly.KatFish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
