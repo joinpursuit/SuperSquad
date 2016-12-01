@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A1506321DF0B8F8008BD83F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506311DF0B8F8008BD83F /* AppDelegate.swift */; };
-		1A1506341DF0B8F8008BD83F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506331DF0B8F8008BD83F /* ViewController.swift */; };
+		1A1506341DF0B8F8008BD83F /* KatUserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506331DF0B8F8008BD83F /* KatUserHomeViewController.swift */; };
 		1A1506371DF0B8F8008BD83F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1506351DF0B8F8008BD83F /* Main.storyboard */; };
 		1A1506391DF0B8F8008BD83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1506381DF0B8F8008BD83F /* Assets.xcassets */; };
 		1A15063C1DF0B8F8008BD83F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		1A15062E1DF0B8F8008BD83F /* KatFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KatFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1506311DF0B8F8008BD83F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A1506331DF0B8F8008BD83F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A1506331DF0B8F8008BD83F /* KatUserHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatUserHomeViewController.swift; sourceTree = "<group>"; };
 		1A1506361DF0B8F8008BD83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A1506381DF0B8F8008BD83F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A15063B1DF0B8F8008BD83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				1A1506311DF0B8F8008BD83F /* AppDelegate.swift */,
-				1A1506331DF0B8F8008BD83F /* ViewController.swift */,
+				1A1506331DF0B8F8008BD83F /* KatUserHomeViewController.swift */,
 				1A1506351DF0B8F8008BD83F /* Main.storyboard */,
 				7D514D881DF0C62400B18D3F /* UserCollectionViewCell.swift */,
 				7D514D861DF0C5C500B18D3F /* UserDetailViewController.swift */,
@@ -217,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A1506341DF0B8F8008BD83F /* ViewController.swift in Sources */,
+				1A1506341DF0B8F8008BD83F /* KatUserHomeViewController.swift in Sources */,
 				7D514D891DF0C62400B18D3F /* UserCollectionViewCell.swift in Sources */,
 				1A1506321DF0B8F8008BD83F /* AppDelegate.swift in Sources */,
 				7D514D871DF0C5C500B18D3F /* UserDetailViewController.swift in Sources */,

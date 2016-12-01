@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,  UICollectionViewDelegate, UICollectionViewDataSource {
+class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UICollectionViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()

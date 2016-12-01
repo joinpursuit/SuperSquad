@@ -44,7 +44,7 @@ class UserDetailViewController: UIViewController {
 
 }
 
-extension ViewController: TwicketSegmentedControlDelegate {
+extension UserDetailViewController: TwicketSegmentedControlDelegate {
     func didSelect(_ segmentIndex: Int) {
         print("Selected idex: \(segmentIndex)")
     }
