@@ -12,6 +12,7 @@
 		1A1506371DF0B8F8008BD83F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1506351DF0B8F8008BD83F /* Main.storyboard */; };
 		1A1506391DF0B8F8008BD83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1506381DF0B8F8008BD83F /* Assets.xcassets */; };
 		1A15063C1DF0B8F8008BD83F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */; };
+		1A1506441DF0C3DC008BD83F /* ApiRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1506431DF0C3DC008BD83F /* ApiRequestManager.swift */; };
 		3124B50C42F48A265954BEFC /* Pods_KatFish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C921577E992D97E60BAE99 /* Pods_KatFish.framework */; };
 		CC9567611DF0CA5400545535 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9567601DF0CA5400545535 /* User.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		1A1506381DF0B8F8008BD83F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A15063B1DF0B8F8008BD83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A15063D1DF0B8F8008BD83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1506431DF0C3DC008BD83F /* ApiRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestManager.swift; sourceTree = "<group>"; };
 		A02B54C8075C5E3AEBA88DAF /* Pods-KatFish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatFish.release.xcconfig"; path = "Pods/Target Support Files/Pods-KatFish/Pods-KatFish.release.xcconfig"; sourceTree = "<group>"; };
 		A0C921577E992D97E60BAE99 /* Pods_KatFish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KatFish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C990E5BE773B1226B7F0EA4D /* Pods-KatFish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatFish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KatFish/Pods-KatFish.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				1A1506311DF0B8F8008BD83F /* AppDelegate.swift */,
+				1A1506451DF0C3E9008BD83F /* Managers */,
 				1A1506331DF0B8F8008BD83F /* ViewController.swift */,
 				1A1506351DF0B8F8008BD83F /* Main.storyboard */,
 				CC9567601DF0CA5400545535 /* User.swift */,
@@ -72,6 +75,14 @@
 				1A15063D1DF0B8F8008BD83F /* Info.plist */,
 			);
 			path = KatFish;
+			sourceTree = "<group>";
+		};
+		1A1506451DF0C3E9008BD83F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1A1506431DF0C3DC008BD83F /* ApiRequestManager.swift */,
+			);
+			name = Managers;
 			sourceTree = "<group>";
 		};
 		4BA04BD490449CC988ADA53D /* Frameworks */ = {
@@ -217,6 +228,7 @@
 				CC9567611DF0CA5400545535 /* User.swift in Sources */,
 				1A1506341DF0B8F8008BD83F /* ViewController.swift in Sources */,
 				1A1506321DF0B8F8008BD83F /* AppDelegate.swift in Sources */,
+				1A1506441DF0C3DC008BD83F /* ApiRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
