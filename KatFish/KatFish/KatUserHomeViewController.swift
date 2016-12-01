@@ -16,7 +16,7 @@ class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UI
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        buildPeopleArray
+        buildPeopleArray()
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -42,7 +42,9 @@ class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UI
         ApiRequestManager.getUsers(results: 10, gender: .female) { (userData) in
             if let userData = userData{
                 print("we got data \(userData)")
-                self.people = User.getUsers(userData)
+                if let people = User.makeUserObjects(from: userData){
+                    self.people = people
+                }
             }
         }
     }
