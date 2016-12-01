@@ -8,4 +8,5 @@ target 'KatFish' do
   # Pods for KatFish
 pod ‘Alamofire’
 pod ‘SwiftyJSON’
+pod ‘TwicketSegmentedControl’
 end
