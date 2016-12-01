@@ -13,6 +13,8 @@
 		1A1506391DF0B8F8008BD83F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1506381DF0B8F8008BD83F /* Assets.xcassets */; };
 		1A15063C1DF0B8F8008BD83F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */; };
 		3124B50C42F48A265954BEFC /* Pods_KatFish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C921577E992D97E60BAE99 /* Pods_KatFish.framework */; };
+		7D514D871DF0C5C500B18D3F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D514D861DF0C5C500B18D3F /* UserDetailViewController.swift */; };
+		7D514D891DF0C62400B18D3F /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D514D881DF0C62400B18D3F /* UserCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		1A1506381DF0B8F8008BD83F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A15063B1DF0B8F8008BD83F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A15063D1DF0B8F8008BD83F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D514D861DF0C5C500B18D3F /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		7D514D881DF0C62400B18D3F /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 		A02B54C8075C5E3AEBA88DAF /* Pods-KatFish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatFish.release.xcconfig"; path = "Pods/Target Support Files/Pods-KatFish/Pods-KatFish.release.xcconfig"; sourceTree = "<group>"; };
 		A0C921577E992D97E60BAE99 /* Pods_KatFish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KatFish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C990E5BE773B1226B7F0EA4D /* Pods-KatFish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatFish.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KatFish/Pods-KatFish.debug.xcconfig"; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				1A1506311DF0B8F8008BD83F /* AppDelegate.swift */,
 				1A1506331DF0B8F8008BD83F /* ViewController.swift */,
 				1A1506351DF0B8F8008BD83F /* Main.storyboard */,
+				7D514D881DF0C62400B18D3F /* UserCollectionViewCell.swift */,
+				7D514D861DF0C5C500B18D3F /* UserDetailViewController.swift */,
 				1A1506381DF0B8F8008BD83F /* Assets.xcassets */,
 				1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */,
 				1A15063D1DF0B8F8008BD83F /* Info.plist */,
@@ -212,7 +218,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1506341DF0B8F8008BD83F /* ViewController.swift in Sources */,
+				7D514D891DF0C62400B18D3F /* UserCollectionViewCell.swift in Sources */,
 				1A1506321DF0B8F8008BD83F /* AppDelegate.swift in Sources */,
+				7D514D871DF0C5C500B18D3F /* UserDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KatFish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.jermainekelly.KatFish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KatFish/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nyc.c4q.jermainekelly.KatFish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,6 +386,7 @@
 				1A1506421DF0B8F8008BD83F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
