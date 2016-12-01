@@ -8,12 +8,15 @@
 
 import UIKit
 
+
 class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UICollectionViewDataSource {
+    var people: [User] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        buildPeopleArray
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -35,6 +38,14 @@ class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UI
         return cell!
     }
     
+    func buildPeopleArray(){
+        ApiRequestManager.getUsers(results: 10, gender: .female) { (userData) in
+            if let userData = userData{
+                print("we got data \(userData)")
+                self.people = User.getUsers(userData)
+            }
+        }
+    }
     
     /*
      // MARK: - Navigation
@@ -46,7 +57,7 @@ class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UI
      }
      */
     
-
-
+    
+    
 }
 
