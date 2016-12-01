@@ -69,7 +69,7 @@
 				1A1506451DF0C3E9008BD83F /* Managers */,
 				1A1506331DF0B8F8008BD83F /* ViewController.swift */,
 				1A1506351DF0B8F8008BD83F /* Main.storyboard */,
-				CC9567601DF0CA5400545535 /* User.swift */,
+				1A1506461DF0CE6A008BD83F /* Models */,
 				1A1506381DF0B8F8008BD83F /* Assets.xcassets */,
 				1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */,
 				1A15063D1DF0B8F8008BD83F /* Info.plist */,
@@ -83,6 +83,14 @@
 				1A1506431DF0C3DC008BD83F /* ApiRequestManager.swift */,
 			);
 			name = Managers;
+			sourceTree = "<group>";
+		};
+		1A1506461DF0CE6A008BD83F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CC9567601DF0CA5400545535 /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		4BA04BD490449CC988ADA53D /* Frameworks */ = {
