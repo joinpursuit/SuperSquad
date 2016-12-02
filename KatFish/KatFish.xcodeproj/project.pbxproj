@@ -69,14 +69,10 @@
 		1A1506301DF0B8F8008BD83F /* KatFish */ = {
 			isa = PBXGroup;
 			children = (
-				1A1506311DF0B8F8008BD83F /* AppDelegate.swift */,
 				1A1506451DF0C3E9008BD83F /* Managers */,
-				1A1506351DF0B8F8008BD83F /* Main.storyboard */,
 				1A1506461DF0CE6A008BD83F /* Models */,
 				1A1506471DF0D09E008BD83F /* View Controllers */,
-				1A1506381DF0B8F8008BD83F /* Assets.xcassets */,
-				1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */,
-				1A15063D1DF0B8F8008BD83F /* Info.plist */,
+				1AA5CAC11DF1391700F76A80 /* Supporting Files */,
 			);
 			path = KatFish;
 			sourceTree = "<group>";
@@ -105,6 +101,18 @@
 				7D514D861DF0C5C500B18D3F /* UserDetailViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1AA5CAC11DF1391700F76A80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A1506311DF0B8F8008BD83F /* AppDelegate.swift */,
+				1A1506351DF0B8F8008BD83F /* Main.storyboard */,
+				1A1506381DF0B8F8008BD83F /* Assets.xcassets */,
+				1A15063A1DF0B8F8008BD83F /* LaunchScreen.storyboard */,
+				1A15063D1DF0B8F8008BD83F /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4BA04BD490449CC988ADA53D /* Frameworks */ = {

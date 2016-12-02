@@ -39,7 +39,7 @@ class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UI
     }
     
     func buildPeopleArray(){
-        ApiRequestManager.getUsers(results: 10, gender: .female) { (userData) in
+        ApiRequestManager.getUsers() { (userData) in
             if let userData = userData{
                 print("we got data \(userData)")
                 if let people = User.makeUserObjects(from: userData){
