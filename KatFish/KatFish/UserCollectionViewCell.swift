@@ -9,7 +9,8 @@
 import UIKit
 
 class UserCollectionViewCell: UICollectionViewCell {
-    
+    //Added a static variable for cellIdentifier. Feel free to change it here and storyboard
+    static let cellIdentifier: String = "userCell"
 //didset update ui
     
     @IBOutlet weak var userName: UILabel!

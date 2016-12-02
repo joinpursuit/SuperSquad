@@ -8,15 +8,19 @@
 
 import UIKit
 
-
 class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UICollectionViewDataSource {
-    var people: [User] = []
+    @IBOutlet weak var usersCollectionView: UICollectionView!
+    
+    var users: [User] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Made the view controller the delegate and datasource for the collection view
+        usersCollectionView.dataSource = self
+        usersCollectionView.delegate = self
         // Do any additional setup after loading the view.
-        buildPeopleArray()
+        buildUsersArray()
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -27,23 +31,28 @@ class KatUserHomeViewController: UIViewController,  UICollectionViewDelegate, UI
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return users.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reuseIdentifier", for: indexPath) as? UserCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UserCollectionViewCell.cellIdentifier, for: indexPath) as! UserCollectionViewCell
         
         // Configure the cell
+        let user = users[indexPath.section]
+        cell.userName.text = user.name
         
-        return cell!
+        return cell
     }
     
-    func buildPeopleArray(){
+    func buildUsersArray(){
         ApiRequestManager.getUsers() { (userData) in
             if let userData = userData{
                 print("we got data \(userData)")
-                if let people = User.makeUserObjects(from: userData){
-                    self.people = people
+                if let validUsers = User.makeUserObjects(from: userData){
+                    self.users = validUsers
+                    DispatchQueue.main.async {
+                        self.usersCollectionView.reloadData()
+                    }
                 }
             }
         }
