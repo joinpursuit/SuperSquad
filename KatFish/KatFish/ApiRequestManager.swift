@@ -20,9 +20,8 @@ class ApiRequestManager{
     
     static func getUsers(results: Int = 25, gender: UserGender = .both, completion: @escaping (Data?)->()){
         Alamofire.request("https://randomuser.me/api/?results=\(results)&gender=\(gender)").response { (response) in
-            print("https://randomuser.me/api/?results=\(results)&gender=\(gender)")
-            completion(response.data)
             
+            completion(response.data)
         }
     }
 }

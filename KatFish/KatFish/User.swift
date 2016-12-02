@@ -7,7 +7,6 @@
 //
 import Foundation
 import SwiftyJSON
-import Alamofire
 
 class User {
     let gender: String
@@ -39,15 +38,27 @@ class User {
     }
     
     static func makeUserObjects(from data: Data) -> [User]? {
-       
-            let json = JSON(data: data)
-            
-            for user in json["results"].arrayValue {
-                print(user["firstName"].stringValue)
-            }
+        var users: [User]? = []
+        let json = JSON(data: data)
         
-        return nil
+        for user in json["results"].arrayValue {
+            let gender = user["gender"].stringValue,
+            name = user["name"]["first"].stringValue,
+            location = user["location"]["state"].stringValue,
+            email = user["email"].stringValue,
+            login = user["login"]["username"].stringValue,
+            registered = user["registered"].stringValue,
+            dob = user["dob"].stringValue,
+            phone = user["phone"].stringValue,
+            call = user["cell"].stringValue,
+            id = user["id"]["name"].stringValue,
+            picture = user["picture"]["large"].stringValue,
+            nat = user["nat"].stringValue,
+            validUser = User(gender: gender, name: name, location: location, email: email, login: login, registered: registered, dob: dob, phone: phone, call: call, id: id, picture: picture, nat: nat)
+            users?.append(validUser)
+        }
         
+        return users
     }
-    //for commit
+    
 }
